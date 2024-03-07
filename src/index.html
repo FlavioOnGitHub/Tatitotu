@@ -9,30 +9,47 @@
   </head>
   <body>
     <nav class="l-nav">
-      <!-- <img src="img/logo.svg" alt="" />
+      <a href=""><img src="img/logo.svg" alt="" /></a>
       <div>
         <div class="top-nav-button"><a href="">Exercer</a></div>
         <div class="top-nav-button"><a href="">Imprimer</a></div>
-      </div> -->
+      </div>
     </nav>
     <div class="container">
       <div class="row">
         <div class="col-10 offset-1">
-          <!-- <p>
-            Tatitotu, le site pour entraîner la langue française avec des défis
-            de conjugaison et de grammaire.
-          </p> -->
+          <div class="heading">
+            <p>
+              <span>Tatitotu</span>, le site pour entraîner la langue française
+              avec des défis de conjugaison et de grammaire.
+            </p>
+          </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-2 offset-2">
-          <div class="challenge-choice-new"></div>
-        </div>
-        <div class="col-4">
-          <div class="challenge choice-field"></div>
-        </div>
-        <div class="col-2">
-          <div class="challenge-choice-load"></div>
+        <div class="col-12">
+          <div class="choice-container">
+            <a href="" class="challenge-choice-new">
+              <div>
+                <img src="img/icon-new.svg" alt="" />
+                <span>Nouveau défi</span>
+              </div>
+            </a>
+            <div class="challenge-choice-field">
+              <input
+                type="text"
+                id="code"
+                name="code"
+                placeholder="Entrer le code à 8 caractères"
+              />
+            </div>
+            <a href="" class="challenge-choice-load">
+              <div>
+                <img src="img/icon-load.svg" alt="" />
+                <span>Charger le défi</span>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
       <div class="row">

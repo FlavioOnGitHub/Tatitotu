@@ -1,6 +1,16 @@
+$grid-gutter-width: 20px;
+$container-max-widths: (
+  sm: 100%,
+  md: 100%,
+  lg: 100%,
+  xl: 100%,
+  xxl: 100%,
+);
+
 @import "bootstrap/scss/bootstrap-grid";
 @import "base";
 @import "layout";
 @import "modules/blank";
 @import "modules/top-nav-button";
 @import "modules/challenge-choice";
+@import "modules/heading";

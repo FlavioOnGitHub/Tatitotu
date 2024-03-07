@@ -4,6 +4,13 @@
   --dark-blue: #3c7cc6;
 }
 
+.container {
+  margin: 0;
+  padding: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -33,16 +40,4 @@ video {
   max-inline-size: 100%;
   block-size: auto;
   vertical-align: middle;
-}
-
-.row + .row {
-  margin-top: 16px;
-}
-
-.row > .col,
-.row > [class^="col-"] {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: rgba(86, 61, 124, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.2);
 }
