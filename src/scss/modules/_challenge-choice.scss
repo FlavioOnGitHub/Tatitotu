@@ -47,8 +47,10 @@
   border-right: 1.5px solid #7bade7;
   border-bottom: 3px solid #7bade7;
   border-left: 3px solid #7bade7;
+  transition: color 0.2s;
 }
 
 .challenge-choice-field input:focus {
   outline: none;
+  color: #939393;
 }
