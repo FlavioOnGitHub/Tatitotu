@@ -1,0 +1,21 @@
+.textfield {
+  width: 100%;
+}
+
+.textfield-t-large {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "heebo";
+  font-weight: 500;
+  color: black;
+  outline: none;
+  border: 2.5px solid black;
+  border-radius: 6px;
+  text-transform: lowercase;
+  margin-bottom: 20px;
+}
+
+.verb-section ::placeholder {
+  color: #bdbdbd;
+  text-transform: uppercase;
+}
