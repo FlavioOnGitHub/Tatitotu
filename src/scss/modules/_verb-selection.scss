@@ -1,15 +1,121 @@
+/* choses génériques pour la composition des sections dans "temps"*/
+.time-section {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 33px;
+}
+
+.verb-selection {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 50%;
+  padding-left: 20px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
+.verb-selection-special {
+  width: 100%;
+}
+
+.switches-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 28px 0;
+}
+
+.verb-with-radios {
+  display: flex;
+  flex-flow: column wrap;
+  width: 50%;
+}
+
+/* customization du switch */
+
+.verb-switch label {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  font-size: 18px;
+  gap: 20px;
+}
+
 .switch-wrapper {
   display: inline-block;
-  width: 30px;
-  height: 20px;
+  width: 32px;
+  height: 12px;
   padding: 2px;
-  border-radius: 10px;
-  background: orange;
+  border-radius: 36px;
+  background-color: #dedede;
+  transition: background-color 0.2s;
 }
 
 .switch-inner {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #cbcbcb;
+  margin-top: -6px;
+  margin-left: -3px;
+  transition: background-color 0.2s, margin-left 0.2s;
+}
+
+input:checked + .switch-wrapper .switch-inner {
+  margin-left: 12px;
+  background-color: #3c7cc6;
+}
+
+input:checked + .switch-wrapper {
+  background-color: #7bade7;
+}
+
+.verb-switch input {
+  display: none;
+}
+
+/* customization du radio */
+.radios-container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 8px;
+  font-size: 12px;
+  margin-top: 15px;
+  padding-left: 20px;
+  width: 100%;
+}
+
+.radios-container label {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.radios-container label:hover {
+  cursor: pointer;
+}
+
+.radio-placeholder {
+  display: inline-block; /* pour que le div soit à côté du texte */
+  width: 14px;
+  height: 14px;
   border-radius: 8px;
-  background: red;
+  border: 1.5px solid #3c7cc6;
+  outline: 3px rgba(123, 173, 231, 0) solid;
+  transition: outline 0.2s;
+}
+
+.radios-container input:checked + .radio-placeholder {
+  height: 14px;
+  width: 14px;
+  border: 3px solid #3c7cc6;
+}
+
+.radios-container input:hover + .radio-placeholder {
+  outline: 3px rgba(123, 173, 231, 0.5) solid;
+}
+
+.radios-container input {
+  display: none;
 }
