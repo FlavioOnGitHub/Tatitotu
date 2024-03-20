@@ -1,0 +1,40 @@
+.select-type {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.radio-placeholder-button:hover {
+  cursor: pointer;
+}
+
+.radio-placeholder-button {
+  font-size: 12px;
+  padding: 6px 8px;
+  color: #5477a1;
+  background-color: white;
+  border: 1.5px solid #7bade7;
+  border-radius: 4px;
+}
+
+.select-type input:checked + .radio-placeholder-button {
+  background-color: #3c7cc6;
+  color: white;
+  border: #3c7cc6 1.5px solid;
+}
+
+.select-type input:not(:checked):hover + .radio-placeholder-button {
+  background-color: #dff3ff;
+  cursor: pointer;
+}
+
+.select-type input {
+  display: none;
+}
+
+.select-type div {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 5px;
+}

@@ -1,0 +1,104 @@
+.print-switch {
+  border-top: 1px rgba($color: #000000, $alpha: 0.3) solid;
+  border-bottom: 1px rgba($color: #000000, $alpha: 0.3) solid;
+  padding: 18px 0;
+}
+
+.no-bar {
+  border-bottom: none;
+  padding-bottom: 10px;
+}
+
+.print-switch-checked {
+  border-bottom: 0px black solid;
+  padding-bottom: 10px;
+}
+
+.print-switch input {
+  display: none;
+}
+
+.print-switch label {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.print-switch .switch-wrapper {
+  order: 1;
+}
+
+/* settings */
+.print-section {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+  opacity: 0;
+}
+
+.options-shown {
+  opacity: 1;
+}
+
+.print-switches-container {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 12px;
+}
+
+.print-name {
+  width: 100%;
+  border: 2px #7bade7 solid;
+  padding: 9px 12px;
+  outline: none;
+  border-radius: 4px;
+}
+
+.print-name::placeholder {
+  text-transform: uppercase;
+  color: #bdbdbd;
+  font-size: 12px;
+}
+
+/* switches */
+.print-options-switch input {
+  display: none;
+}
+
+.print-options-switch .switch-wrapper {
+  width: 28px;
+  height: 10px;
+}
+
+.print-options-switch .switch-inner {
+  width: 17px;
+  height: 17px;
+  margin-top: -6px;
+  margin-left: -2px;
+}
+
+.print-options-switch input:checked + .switch-wrapper .switch-inner {
+  margin-left: 10px;
+}
+
+.print-options-switch {
+  font-size: 15px;
+}
+
+.print-options-switch {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.print-switches-container .print-special-switch {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+.print-switches-container img {
+  width: 17px;
+}

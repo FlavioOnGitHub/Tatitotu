@@ -1,0 +1,32 @@
+.select-number label {
+  font-size: 18px;
+}
+
+.select-number {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.select-number select {
+  background-color: white;
+  border: 1.5px solid #7bade7;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 5px 0 5px 10px;
+  color: #5477a1;
+}
+
+.select-number select:hover {
+  background-color: #dff3ff;
+  cursor: pointer;
+}
+
+.options-buttons-container {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}

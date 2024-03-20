@@ -18,7 +18,7 @@
     <div class="container">
       <div class="row">
         <div class="col-10 offset-1">
-          <div class="heading">
+          <div class="heading" id="page-top">
             <p>
               <span>Tatitotu</span>, le site pour entraîner la langue française
               avec des défis de conjugaison et de grammaire.
@@ -608,12 +608,171 @@
               <h2>options</h2>
               <a href="">Réinitialiser</a>
             </div>
-            <div class="button-container"></div>
+            <div class="options-buttons-container">
+              <div class="select-number">
+                <label for="questions-number">Nombre de questions</label>
+                <select id="questions-number" name="questions-number">
+                  <option value="5">5</option>
+                  <option value="10">10</option>
+                  <option value="20">20</option>
+                  <option value="30">30</option>
+                  <option value="40">40</option>
+                  <option value="50">50</option>
+                </select>
+              </div>
+              <div class="select-type">
+                <span>Type</span>
+                <div>
+                  <label>
+                    <input type="radio" name="type" />
+                    <div class="radio-placeholder-button">Normal</div>
+                  </label>
+                  <label>
+                    <input type="radio" name="type" />
+                    <div class="radio-placeholder-button">
+                      Trouver mode + temps
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="save-challenge">
+                <a href="">
+                  <span>sauvegarder le defi</span>
+                </a>
+              </div>
+            </div>
+            <div class="print-settings">
+              <div class="print-switch">
+                <label>
+                  <input
+                    type="checkbox"
+                    name="print-settings"
+                    value="shown"
+                    class="print-input"
+                  />
+                  <div class="switch-wrapper">
+                    <div class="switch-inner"></div>
+                  </div>
+                  Options d'impression
+                </label>
+              </div>
+              <div class="print-section options-hidden">
+                <input
+                  type="text"
+                  id="print-name"
+                  name="print-name"
+                  placeholder="défi de conjugaison"
+                  class="print-name"
+                />
+                <div class="print-switches-container">
+                  <label class="print-options-switch">
+                    <input
+                      type="checkbox"
+                      name="print-settings"
+                      value="shown"
+                    />
+                    <div class="switch-wrapper">
+                      <div class="switch-inner"></div>
+                    </div>
+                    Afficher espace pour la note
+                  </label>
+                  <label class="print-options-switch">
+                    <input
+                      type="checkbox"
+                      name="print-settings"
+                      value="shown"
+                    />
+                    <div class="switch-wrapper">
+                      <div class="switch-inner"></div>
+                    </div>
+                    Afficher les verbes évalués
+                  </label>
+                  <label class="print-options-switch">
+                    <input
+                      type="checkbox"
+                      name="print-settings"
+                      value="shown"
+                    />
+                    <div class="switch-wrapper">
+                      <div class="switch-inner"></div>
+                    </div>
+                    Afficher les temps évalués
+                  </label>
+                  <label class="print-options-switch">
+                    <input
+                      type="checkbox"
+                      name="print-settings"
+                      value="shown"
+                    />
+                    <div class="switch-wrapper">
+                      <div class="switch-inner"></div>
+                    </div>
+                    Afficher espace pour le prénom
+                  </label>
+                  <label class="print-options-switch">
+                    <input
+                      type="checkbox"
+                      name="print-settings"
+                      value="shown"
+                    />
+                    <div class="switch-wrapper">
+                      <div class="switch-inner"></div>
+                    </div>
+                    Afficher espace pour le nom
+                  </label>
+                  <label class="print-options-switch">
+                    <input
+                      type="checkbox"
+                      name="print-settings"
+                      value="shown"
+                    />
+                    <div class="switch-wrapper">
+                      <div class="switch-inner"></div>
+                    </div>
+                    Afficher espace pour la date
+                  </label>
+                  <label class="print-options-switch">
+                    <input
+                      type="checkbox"
+                      name="print-settings"
+                      value="shown"
+                    />
+                    <div class="switch-wrapper">
+                      <div class="switch-inner"></div>
+                    </div>
+                    Afficher les pronoms exclusifs (il/elle/iel)
+                  </label>
+                  <div class="print-special-switch">
+                    <label class="print-options-switch">
+                      <input
+                        type="checkbox"
+                        name="print-settings"
+                        value="shown"
+                      />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Afficher nombre aléatoire
+                    </label>
+                    <a href=""><img src="img/icon-info.svg" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <footer></footer>
+    <footer>
+      <a href="#page-top"><img src="img/logo.svg" alt="" /></a>
+      <div>
+        <a href="">
+          <span> Contact : </span>
+          <span> christophe.roulet@edu-vd.ch </span>
+        </a>
+      </div>
+    </footer>
     <script src="js/main.js" type="module"></script>
+    <script src="js/print-settings.js" type="module"></script>
   </body>
 </html>

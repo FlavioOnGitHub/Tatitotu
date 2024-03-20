@@ -23,6 +23,12 @@
   white-space: nowrap;
 }
 
+.challenge-choice-new:hover,
+.challenge-choice-load:hover {
+  background-color: var(--medium-blue);
+  color: #fff;
+}
+
 .challenge-choice-load {
   border-radius: 0 6px 6px 0;
   border-left: 1.5px solid var(--medium-blue);

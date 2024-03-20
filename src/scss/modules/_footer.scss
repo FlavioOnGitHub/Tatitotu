@@ -1,0 +1,28 @@
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: #93bced;
+  margin-top: 20px;
+  color: #27445f;
+}
+
+footer img {
+  width: 116px;
+}
+
+footer div span:first-child {
+  font-size: 11px;
+  font-weight: 300;
+}
+
+footer div span:nth-child(2) {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+footer a {
+  text-decoration: none;
+}
