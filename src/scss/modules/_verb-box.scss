@@ -19,3 +19,9 @@
 .verb-box img {
   height: 18px;
 }
+
+.verbs-container {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 16px;
+}

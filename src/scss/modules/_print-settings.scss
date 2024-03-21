@@ -44,7 +44,7 @@
 .print-switches-container {
   display: flex;
   flex-flow: column wrap;
-  gap: 12px;
+  gap: 15px;
 }
 
 .print-name {
@@ -84,13 +84,10 @@
 
 .print-options-switch {
   font-size: 15px;
-}
-
-.print-options-switch {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
 }
 
 .print-switches-container .print-special-switch {
