@@ -103,7 +103,7 @@ input:checked + .switch-wrapper {
   border-radius: 8px;
   border: 1.5px solid #3c7cc6;
   outline: 3px rgba(123, 173, 231, 0) solid;
-  transition: outline 0.2s;
+  transition: outline 0.2s, border 0.2s;
 }
 
 .radios-container input:checked + .radio-placeholder {

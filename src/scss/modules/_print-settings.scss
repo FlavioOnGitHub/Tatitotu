@@ -61,6 +61,10 @@
   font-size: 12px;
 }
 
+.print-name:focus::placeholder {
+  color: #939393;
+}
+
 /* switches */
 .print-options-switch input {
   display: none;
