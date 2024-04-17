@@ -22,6 +22,7 @@
   text-decoration: none;
   white-space: nowrap;
   transition: background-color 0.2s, color 0.2s;
+  overflow: hidden;
 }
 
 .challenge-choice-new:hover,
@@ -65,12 +66,20 @@
   color: #939393;
 }
 
-.challenge-choice-new img:nth-child(2) {
+.challenge-choice-new div img:last-of-type {
   display: none;
 }
 
-.challenge-choice-load img:nth-child(2) {
+.challenge-choice-load div img:last-of-type {
   display: none;
+}
+
+.challenge-choice-new:hover div img:last-of-type {
+  display: inline;
+}
+
+.challenge-choice-load:hover div img:last-of-type {
+  display: inline;
 }
 
 .challenge-choice-new:hover div img:first-of-type {
@@ -79,12 +88,4 @@
 
 .challenge-choice-load:hover div img:first-of-type {
   display: none;
-}
-
-.challenge-choice-new:hover div img:nth-of-type(2) {
-  display: inline;
-}
-
-.challenge-choice-load:hover div img:nth-of-type(2) {
-  display: inline;
 }

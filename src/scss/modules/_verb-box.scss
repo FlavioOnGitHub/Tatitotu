@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: space-between;
   font-size: 20px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .verb-box span {
@@ -24,4 +25,9 @@
   display: flex;
   flex-flow: column wrap;
   gap: 16px;
+}
+
+.verb-box:hover {
+  background-color: #80b5f1;
+  color: #27445f;
 }
